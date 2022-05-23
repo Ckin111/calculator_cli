@@ -1,54 +1,54 @@
 
 use std::env;
-mod calculator;
+// mod calc;
 
 
-// struct Calculator{
-//     num1: f32,
-//     num2: f32
-// }
+struct Calculator{
+    num1: f32,
+    num2: f32
+}
 
-// impl Calculator {
-//     fn new (n1: f32, n2: f32) -> Calculator {
-//         Calculator {
-//             num1: n1,
-//             num2: n2
-//         }
-//     }
+impl Calculator {
+    fn new (n1: f32, n2: f32) -> Calculator {
+        Calculator {
+            num1: n1,
+            num2: n2
+        }
+    }
 
-//     fn add(&self) -> f32 {
-//         let x: f32 = self.num1 + self.num2;
-//         x
-//     }
+    fn add(&self) -> f32 {
+        let x: f32 = self.num1 + self.num2;
+        x
+    }
 
-//     fn subtract(&self) -> f32 {
-//         let x: f32 = self.num1 - self.num2;
-//         x
-//     }
+    fn subtract(&self) -> f32 {
+        let x: f32 = self.num1 - self.num2;
+        x
+    }
 
-//     fn multiply(&self) -> f32 {
-//         let x: f32 = self.num1 * self.num2;
-//         x
-//     }
+    fn multiply(&self) -> f32 {
+        let x: f32 = self.num1 * self.num2;
+        x
+    }
 
-//     fn divide(&self) -> f32 {
-//         let x: f32 = self.num1 / self.num2;
-//         x
-//     }
+    fn divide(&self) -> f32 {
+        let x: f32 = self.num1 / self.num2;
+        x
+    }
     
-//     fn modul(&self) -> f32 {
-//         let x: f32 = self.num1 % self.num2;
-//         x
-//     }
-// }
+    fn modul(&self) -> f32 {
+        let x: f32 = self.num1 % self.num2;
+        x
+    }
+}
 
 pub fn run() {
-    // let c = Calculator::new(5.0,5.0);
-    // println!("{}",c.add());
-    // println!("{}",c.subtract());
-    // println!("{}",c.multiply());
-    // println!("{}",c.divide());
-    // println!("{}",c.modul());
+    let c = Calculator::new(5.0,5.0);
+    println!("{}",c.add());
+    println!("{}",c.subtract());
+    println!("{}",c.multiply());
+    println!("{}",c.divide());
+    println!("{}",c.modul());
 
     // WIP add currency conversion, news updates, weather, stocks (dow jones nasdaq vix), cryptos
 
@@ -67,7 +67,7 @@ pub fn run() {
     //     quit => println!("Goodbye :("),
     //     _ => println!("invalid command, type 'help' for a list of commands")
     // }
-    // let num1: f32 = 5.0;
-    // let num2: f32 = 6.0;
-    // let c = calculator::run(num1,num2,'a');
+//     let num1: f32 = 5.0;
+//     let num2: f32 = 6.0;
+//     let c = calc::run(num1,num2,'a');
 }
