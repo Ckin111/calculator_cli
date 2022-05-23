@@ -50,13 +50,21 @@ pub fn run() {
     println!("{}",c.divide());
     println!("{}",c.modul());
 
+    let args: Vec<String> = env::args().collect();
+
+    let query = &args[1];
+    let filename = &args[2];
+    
+    println!("Searching for {}",query);
+    println!("In file {}",filename);
+
+
     // WIP add currency conversion, news updates, weather, stocks (dow jones nasdaq vix), cryptos
 
     // add
     // what would you like to add? Ex: 5 + 6.2
 
     // println!("Welcome to the Ultimate Helper bot :) \nType your command below or type 'help' for a list of commands");
-    // let args: Vec<String> = env::args().collect();
     // // in order for this to work u have to do cargo run help or cargo run add, find scanner and make cli with that like u did in java
     // let command = args[1].clone();
     // let help = "help".to_string();
